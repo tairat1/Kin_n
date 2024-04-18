@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      background-color: #282c34; /* สีพื้นหลัง */
+    }
+
+    .shimmer-text-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .shimmer-text {
+      font-size: 24px;
+      color: #fff; /* สีข้อความ */
+      white-space: nowrap; /* ไม่ขึ้นบรรทัดใหม่ */
+      animation: shimmer 1s infinite linear, move 5s infinite linear;
+      position: absolute;
+      top: 0;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    @keyframes move {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100%);
+      }
+    }
+  </style>
+  <title>Shimmer Text Effect with JavaScript</title>
+</head>
+<body>
+  <div class="shimmer-text-container">
+    <div class="shimmer-text">Shimmering Text</div>
+    <p>test</p>
+  </div>
+
+  <script>
+    // Optional: Add JavaScript for dynamic content if needed
+  </script>
+</body>
+</html>

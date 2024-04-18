@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แสดงวันที่</title>
+<style>
+    /* กำหนด keyframes สำหรับ animation ที่ชื่อว่า 'bounce' */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ใช้งาน animation กับ element ที่มี class 'animated-box' */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: bounce 2s infinite; /* ใช้ animation 'bounce' ที่มีระยะเวลา 2 วินาที และทำซ้ำอย่างไม่จำกัด */
+}
+
+/* เพิ่มความสวยงามด้วยการใช้ transition ในการเปลี่ยนสี */
+.animated-box:hover {
+  background-color: #555;
+  transition: background-color 0.3s;
+}
+</style>
+</head>
+<body>
+
+<!-- ส่วนที่จะแสดงวันที่ -->
+<div class="animated-box">Bounce</div>
+
+
+</body>
+</html>
+
+

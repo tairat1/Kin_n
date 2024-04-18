@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Responsive Carousel</title>
+    <style>
+        .image-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            margin: 5px;
+            overflow: hidden;
+            object-fit: cover; /* ทำให้ภาพขยายเต็มตัวใน box โดยไม่เกิดการเพิ่มขนาด container */
+        }
+
+
+
+    </style>
+</head>
+<body>
+<!--ภาพส่วน header -->
+<div class="container mt-4">
+    <div id="carouselExample" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="object-fit: cover; height: 450px; width: 100%;" src="images/img23.jpg" class="d-block" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img style="object-fit: cover; height: 450px; width: 100%;" src="images/img3.jpg" class="d-block" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img style="object-fit: cover; height: 450px; width: 100%;" src="images/img9.jpg" class="d-block" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img style="object-fit: cover; height: 450px; width: 100%;" src="images/img13.jpg" class="d-block" alt="Image 4">
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+    </div>
+    
+    <div class="image-box d-none d-md-flex">
+        <div class="d-flex flex-row">
+            <img src="images/img23.jpg" alt="Image 1" class="img-fluid">
+            <img src="images/img3.jpg" alt="Image 2" class="img-fluid">
+            <img src="images/img9.jpg" alt="Image 3" class="img-fluid">
+            <img src="images/img13.jpg" alt="Image 4" class="img-fluid">
+        </div>
+        <!-- Add more rows as needed -->
+    </div>
+</div>
+<!--End ภาพส่วน header-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

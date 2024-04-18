@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KINTHAILAND 1</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <style>
+    body {
+      
+      background-color: #282c34; /* สีพื้นหลัง */
+      cursor: none; /* ซ่อนเมาส์เริ่มต้น */
+    }
+
+    .cursor-container {
+      position: relative;
+    }
+
+    .small,
+    .big {
+      pointer-events: none; /* ไม่ให้วงกลมมีผลต่อการแสดงผล */
+      position: fixed;
+      border-radius: 50%;
+      mix-blend-mode: difference;
+      transform: translate(-50%, -50%);
+    }
+
+    .small {
+      width: 6px;
+      height: 6px;
+      mix-blend-mode: difference;
+      z-index: 1; /* ตั้งค่า z-index ให้ต่ำกว่า big */
+    }
+
+    .big {
+      width: 50px;
+      height: 50px;
+      border: 0.5px;
+      mix-blend-mode: difference;
+      z-index: 2; /* ตั้งค่า z-index ให้สูงกว่า small */
+    }
+
+    @media (max-width: 991px) {
+      .cursor-container {
+        position: relative;
+
+    }
+
+    body {
+      background-color: #282c34; /* สีพื้นหลัง */
+
+    }
+
+    .small,
+    .big {
+      pointer-events: none; /* ไม่ให้วงกลมมีผลต่อการแสดงผล */
+      position: absolute;
+      mix-blend-mode: difference;
+      transform: none;
+    }
+
+    .small {
+      width: 0px;
+      height: 0px;
+      mix-blend-mode: difference;
+      z-index: 0; /* ตั้งค่า z-index ให้ต่ำกว่า big */
+    }
+    .big {
+      width: 0px;
+      height: 0px;
+      mix-blend-mode: difference;
+      z-index: 0; /* ตั้งค่า z-index ให้สูงกว่า small */
+
+    }
+   
+      
+    }
+
+    @media (max-width: 992px) {
+  #header {
+    backdrop-filter: blur(10px)!important;
+    width: 300px;
+    border-right: 1px solid #e6e9ec;
+    left: -300px;
+    
+  }
+}
+  @media (max-width: 700px) {
+    #header {
+      backdrop-filter: blur(10px)!important;
+      width: 300px;
+      border-right: 1px solid #e6e9ec;
+      left: -300px;
+      
+    }
+  }
+
+    @media (max-width: 300px) {
+      #header {  
+        backdrop-filter: blur(10px)!important;
+        width: 300px;
+        border-right: 1px solid #e6e9ec;
+        left: -300px;
+
+      }
+}
+  </style>
+
+  <!-- Favicons 
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="cursor-container" >
+  
+  <video id="video-bg"  playsinline="" muted="" autoplay="" loop="" style="width:100%;" >
+    <source src="assets/img/son/vd2.mp4">
+  </video>
+
+  <div class="small"></div>
+  <div class="big"></div>
+
+
+ <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header1 ======= -->
+  <header id="header"  class="header d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="about.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="#" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="contact.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+  <!-- ======= Hero2 Section ======= -->
+  <section id="hero2" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="1700">
+      <h1>K I N THAILAND</h1>
+      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        
+      </div>
+      <a href="#" class="btn-get-started scrollto mt-3">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+  <!--End Header -->
+  
+
+
+  <!-- ======= Hero Section ======= -->
+  <br><br><br>
+  <div class="container d-flex justify-content-center "  >
+  <section id="hero" class="hero d-flex flex-column " data-aos="zoom-in" data-aos-delay="1000">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2><strong style="color: rgb(149, 122, 43);">THE DESIGNER</strong>  orem ipsum dolor sit amet, consectetur  a <strong style="color: rgb(149, 122, 43);">Professional</strong>  from ..</h2>
+          <p>Blanditiis praesentium aliquam illum tempore incidunt debitis dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
+          <a href="#" class="btn-get-started">Available for hire</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+
+</div><!-- End Hero Section -->
+  <br><br>
+
+ 
+<section id="clients" class="clients">
+  <div class="container" data-aos="zoom-in">
+
+    <div class="clients-slider swiper">
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/s-one.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+      </div>
+    </div>
+
+  </div>
+</section><br><br><br>
+
+
+<!-- เกี่ยวกับ --> <br><br>
+<section id="about" class="about mt-5">
+  <div class="container " style="background-color: rgb(255, 255, 255);">
+
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4">
+        <img src="assets/img/son/1.jfif" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-5 content">
+        <h2>orem ipsum dolor sit amet, consectetur</h2>
+        <p class="fst-italic py-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="py-3">
+          Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+          Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+        </p>
+        <p class="m-0">
+          Recusandae est praesentium consequatur eos voluptatem. Vitae dolores aliquam itaque odio nihil. Neque ut neque ut quae voluptas. Maxime corporis aut ut ipsum consequatur. Repudiandae sunt sequi minus qui et. Doloribus molestiae officiis.
+          Soluta eligendi fugiat omnis enim. Numquam alias sint possimus eveniet ad. Ratione in earum eum magni totam.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section><br><br><br><br>
+<center>
+  <div class="container">
+    <video playsinline="" muted="" autoplay="" loop="" style="width:100%;">
+      <source style="width:100%;" src="https://www.plaimanas.com/wp-content/uploads/2023/11/starmember.mp4" type="video/mp4">
+    </video>
+  </div>
+</center>
+
+<!-- รูปเลื่อนเป็นชุด-->
+ <!-- ======= End Page Header ======= -->
+ <div class="page-header d-flex align-items-center ">
+  <div class="container position-relative ">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-6 text-center ">
+        <h2>About</h2>
+        <p class="m-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="gallery-single" class="gallery-single ">
+  <div class="container" >
+    <div class="position-relative h-100">
+      <div class="portfolio-details-slider">
+    <img src="assets/img/son/son1.gif" alt="">
+    <img src="assets/img/son/son2.gif" alt="">
+    </div></div>
+    <!--
+    <div class="position-relative h-100">
+      <div class="slides-1 portfolio-details-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+
+          <div class="swiper-slide">
+            <img src="assets/img/son/sl/1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/son/sl/2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/son/sl/3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/son/sl/4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/son/sl/5.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/son/sl/6.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    -->
+  
+    <div class="row justify-content-between gy-4 mt-4">
+
+      <div class="col-lg-8">
+        <div class="portfolio-description">
+          <h2>This is an example of portfolio detail</h2>
+          <p>
+            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+          </p>
+          <p>
+            Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
+          </p>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <div>
+              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+            </div>
+          </div>
+
+          <p>
+            Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
+
+          <p>
+            Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="portfolio-info">
+          <h3>Project information</h3>
+          <ul>
+            <li><strong>projects</strong> <span>Nature Photography</span></li>
+            <li><strong>about</strong> <span>ASU Company</span></li>
+            <li><strong>Project date</strong> <span>01 March, 2022</span></li>
+            <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
+            <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Gallery Single Section -->
+
+  <div class="container">
+  <main   id="main" data-aos="fade" data-aos-delay="1000">
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item ">
+              <img src="assets/img/son/1.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/2.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/3.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/4.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/5.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/5.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/6.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/7.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/7.jpg" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/8.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/9.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/9.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/10.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/11.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/11.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/12.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/12.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/13.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/14.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/img/son/15.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="assets/img/son/15.jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+    </div>
+
+  </main>
+</div>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container mt-5" >
+      <div class="copyright">
+        &copy; Copyright <strong><span>K I N</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    const cursorSmall = document.querySelector('.small');
+    const cursorBig = document.querySelector('.big');
+  
+    let currentX = 0;
+    let currentY = 0;
+
+    // ความเร็วในการเลื่อน (ให้ตัว big ตามตัว small แบบช้า ๆ)
+    const speed = 0.22;
+  
+    const positionElement = (e) => {
+      const mouseY = e.clientY;
+      const mouseX = e.clientX;
+
+       // ตรวจสอบสีพื้นหลัง
+       const backgroundColor = window.getComputedStyle(document.body).backgroundColor;
+      const isLightBackground = isLightColor(backgroundColor);
+
+      // ปรับสีของ big และ small ตามเงื่อนไข
+      if (isLightBackground) {
+        cursorSmall.style.backgroundColor = '#000'; // สีดำ
+        cursorBig.style.border = '0.5px solid #000'; // สีดำ
+      } else {
+        cursorSmall.style.backgroundColor = '#fff'; // สีขาว
+        cursorBig.style.border = '0.5px solid #fff'; // สีขาว
+      }
+  
+      // Update position for the small cursor
+      cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+  
+      // Calculate the new position for the big cursor (ตำแหน่งใหม่ของ big)
+      const targetX = mouseX - cursorBig.offsetWidth / 2;
+      const targetY = mouseY - cursorBig.offsetHeight / 2;
+
+      // คำนวณการเคลื่อนที่ของ big โดยให้มีความเร็ว
+      currentX += (targetX - currentX) * speed;
+      currentY += (targetY - currentY) * speed;
+
+      // Apply the transformation to the big cursor
+      cursorBig.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+    };
+  
+    
+    const updateCursorPosition = () => {
+      requestAnimationFrame(() => {
+        window.addEventListener('mousemove', positionElement);
+      });
+    };
+
+    // ฟังก์ชั่นตรวจสอบสีว่าเป็นสีพื้นหลังสว่างหรือไม่
+    function isLightColor(color) {
+      const rgb = color.match(/\d+/g);
+      const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+      return brightness > 128;
+    }
+  
+    updateCursorPosition();
+  </script>
+
+</body>
+
+</html>

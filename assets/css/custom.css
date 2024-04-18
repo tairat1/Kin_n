@@ -1,0 +1,367 @@
+/* ส่วน header index page  */
+.header-area {
+    background-color: transparent; /* ตั้งค่าพื้นหลังเป็นใส */
+   /* ตั้งค่า z-index เพื่อให้ header อยู่ด้านหน้า */
+  }
+
+  /* ถ้าคุณต้องการให้เนื้อหาขยับขึ้นเมื่อ header ถูก scroll ลง */
+  .header-sticky {
+    background-color: transparent;
+    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงสีพื้นหลังด้วย transition */
+  }
+
+ /* .imgg{
+    width: 100%;
+    height: calc(120vh - 80px);
+    background: url("images/img271.jpg") top;
+    background-size: cover;
+    position: relative;
+  }*/
+
+ /* start ภาพ bg header */ 
+  #imgg {
+    width: 100%;
+    /* ../../ = ย้อนโฟลเดอร์นอกสุด และเข้าถึง ชั้นโฟลเดอร์  */
+    background: url("../../images/img274.jpg");
+    background-size: cover;
+  }
+/* End ภาพ bg header */
+
+  .inverse-image {
+    filter: invert(1);
+  }
+
+  /* กำหนดเส้น ความห่างของ grid */
+  .borderline{
+    color: black;
+    border-top:  solid 1.5px rgb(0, 0, 0); 
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  .padding-bottom{
+    color: black;
+    padding-left: 0;
+    padding-bottom: 100px ;
+  }
+/* End กำหนดเส้น ความห่างของ grid */
+
+  .social-links-head{
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  /* Start box img พื้นหลังใส*/
+  .imgtran{
+  background-color: transparent;
+   /* End box img พื้นหลังใส*/
+  }
+
+.image-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    overflow: hidden;
+}
+
+/* หน้าจอขยาดใหญ่ */
+@media (min-width:1400px){
+  .imghead-1{
+    height: 580px;
+    padding-top:10px;
+    padding-bottom:20px;
+    }
+    
+  .imghead-2{
+    height: 580px;
+    padding-left: 10px;
+    padding-top: 30px;
+
+    }
+  .imghead-3{
+    height: 580px;
+    padding-left: 10px;
+    padding-bottom:20px;
+
+    }
+  .imghead-4{
+    height: 580px;
+    padding-left: 10px;
+    padding-top: 30px;
+
+    }
+
+    #imgg {
+      min-height: 700px;
+      height: auto;
+    }
+    .ui-div{
+      padding-top:  120px;
+      }
+
+      .col-md-9{
+        width: 85%;
+      }
+
+      .custom-padding-left{
+        padding-left: 30px;
+      }
+
+      .custom-padding-right{
+        float:inline-end;
+        text-align:right;
+      }
+
+      .padding-right{
+        padding-right: 60px;
+      }
+
+      .social-links-head{
+        font-size: 24px;
+        padding-top: 600px;
+        padding-bottom: 10px;
+      }
+
+      /* กำหนดเส้น ความห่างของ grid */
+      .borderline{
+        color: black;
+        border-top:  solid 1.5px rgb(0, 0, 0); 
+        padding-left: 0;
+        padding-top: 60px;
+      }
+
+      .padding-bottom{
+        color: black;
+        padding-left: 0;
+        padding-bottom: 100px ;
+      }
+
+      .padding-main{
+        margin-top: 3rem;
+        padding: 60px;
+      }
+
+      .ui-pc{
+        padding-top: 20vh;
+      }
+
+}
+
+/* pc */
+@media (min-width:1150px) and (max-width:1399) {
+  .imghead-1{
+    height: 580px;
+    padding-top:10px;
+    padding-bottom:20px;
+    }
+    
+  .imghead-2{
+    height: 580px;
+    padding-left: 10px;
+    padding-top: 30px;
+
+    }
+  .imghead-3{
+    height: 580px;
+    padding-left: 10px;
+    padding-bottom:20px;
+
+    }
+  .imghead-4{
+    height: 580px;
+    padding-left: 10px;
+    padding-top: 30px;
+
+    }
+
+    #imgg {
+      min-height: 831px;
+      height: auto;
+    }
+    .ui-div{
+      padding-top:  120px;
+      }
+
+      .col-md-11{
+        width: 85%;
+      }
+
+      .custom-padding-left{
+        padding-left: 30px;
+      }
+
+      .custom-padding-right{
+        float:inline-end;
+        text-align:right;
+      }
+
+      .padding-right{
+        padding-right: 60px;
+      }
+
+      .social-links-head{
+        font-size: 24px;
+        padding-top: 600px;
+        padding-bottom: 10px;
+      }
+
+      /* กำหนดเส้น ความห่างของ grid */
+      .borderline{
+        color: black;
+        border-top:  solid 1.5px rgb(0, 0, 0); 
+        padding-left: 0;
+        padding-top: 60px;
+      }
+
+      .padding-bottom{
+        color: black;
+        padding-left: 0;
+        padding-bottom: 100px ;
+      }
+
+      .padding-main{
+        margin-top: 3rem;
+        padding: 60px;
+      }
+
+      .ui-pc{
+        padding-top: 20vh;
+      }
+
+}
+
+/* tablet */
+@media (min-width:768px) and (max-width:1149px) {
+  .imghead-1{
+    padding-top:10px;
+    padding-bottom:20px;
+    }
+    
+  .imghead-2{
+    padding-left: 10px;
+    padding-top: 30px;
+    }
+  .imghead-3{
+    padding-left: 10px;
+    padding-bottom:20px;
+    }
+  .imghead-4{
+    padding-left: 10px;
+    padding-top: 30px;
+    }
+
+    #imgg {
+      min-height: 665px;
+      height: auto;
+    }
+
+    .ui-div{
+    padding-top:  60px;
+    }
+
+    .col-md-11{
+      width: 85%;
+    }
+
+}
+
+/* มือถือ กว้างเรริ่มต้นน้อยสุด 260 px สูงสุด 700 px */
+@media (min-width:260px) and (max-width:767px) {
+  .imghead-1{
+    
+    height: 500px;
+    }
+    
+  .imghead-2{
+    
+    height: 500px;
+   
+    }
+  .imghead-3{
+    
+    height: 500px;
+    }
+  .imghead-4{
+    
+    height: 500px;
+    }
+    
+    .padding-main{
+      margin-top: 3rem;
+    }
+
+    /* ระยะห่างของมือถือ */
+    .padding-phone{
+      margin-left:0.75rem; 
+    }
+
+  /* กำหนดเส้น ความห่างของ grid */
+  .borderline{
+    padding-top: 20px;
+  }
+
+  /* ระยะขอบล่างหน้าจอขนาดเล็ก */
+  .padding-bottom{
+    color: black;
+    padding-left: 0;
+    padding-bottom: 20px ;
+  }
+
+  .carousel-top{
+    padding: 10vh;
+  }
+  /* ระยะห่าง menu side มือถือ */
+  .ui-phone{
+    padding-top: 20vh;
+    }
+
+    .social-phone{
+    padding-top: 45px;
+    padding-left: 50px;
+    }
+
+    #imgg {
+      min-height: 700px;
+      height: auto;
+    }
+    
+    /* css ซ่อน item */
+    .hiden{
+      display: none;
+      }
+
+      .logo-padding{
+        padding-left: 0.75rem;
+      }
+}
+
+
+  @media (min-width:1150px)
+  {
+  .custom-padding{
+    padding-top: 20vh;
+    }   
+} 
+
+/* tablet */
+  @media (min-width:768px) and (max-width:1149px) 
+  {
+    .custom-padding{
+      padding-top: 25vh;
+      }
+}
+
+  @media (min-width:260px) and (max-width:767px)
+  {
+  .custom-padding{
+  margin-top: 0vh;
+  }
+}
+  /* End*/
+
