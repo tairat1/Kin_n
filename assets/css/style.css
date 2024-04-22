@@ -1185,7 +1185,7 @@
 
 /*** Subscribe Start ***/
 .subscribe {
-    background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../img/subscribe-img.jpg);
+    background: linear-gradient(rgb(235, 235, 235), rgba(249, 243, 243, 0.862)), url(../img/subscribe-img.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
