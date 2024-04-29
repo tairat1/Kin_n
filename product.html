@@ -1,55 +1,62 @@
-<!DOCTYPE html>
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
 
-    <title>Product</title>
-    <meta content="" name="KIN THAiLAND 3" />
-    <meta content="" name="keywords" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap_product.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="assets/css/tiny-slider_product.css" rel="stylesheet">
+		<link href="assets/css/style_product.css" rel="stylesheet">
+		<link href="assets/css/custom.css" rel="stylesheet" />
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<title>Product_kin</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="" rel="stylesheet"/>
+		<script>
+			var myOffcanvas = document.getElementById("myOffcanvas");
+			myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
+				// do something...
+			});
+			</script>
+	</head>
 
-    <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
-    />
-    <link  href="assets/vendor/bootstrap-icons/bootstrap-icons.css"  rel="stylesheet"/>
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <link  href="assets/vendor/glightbox/css/glightbox.min.css"  rel="stylesheet"/>
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <!-- Template Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <!-- css กำหนดเเองเพิ่มเติมในไฟล์ css/custom.css -->
-<!-- css กำหนดเเองเพิ่มเติมในไฟล์ css/custom.css -->
-    <!-- =======================================================
-  * Template Name: PhotoFolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  <style>
-  #imgg {
-    width: 100%;
-    /* ../../ = ย้อนโฟลเดอร์นอกสุด และเข้าถึง ชั้นโฟลเดอร์  */
-    background: url("images/img274.jpg");
-    background-size: cover;
-  }
-  </style>
-  </head>
-
-  <body style="background-color: rgb(252, 255, 253)">
+	<body>
     <header>
+      <!--
+      <div class="custom-padding-left">     
+        <div class="row header">
+             <div class="dropdown header">  
+            <nav  id="navbar" class="navbar nav-menu" style="z-index: 999;">
+            <navlogo class="logo-padding" style="position: fixed;" data-aos="fade-right">
+              <span><img style="position: fixed" class="inverse-image mt-4 " src="images/kin_b.png" height="45px"/></span>
+              </navlogo>
+            </nav>
+              <center>
+              <div class="dropdown-content">
+
+                <a href="#" style="color: rgb(0, 0, 0);">HOME</a>
+                <a href="#" style="color: rgb(0, 0, 0);">PRODUCT</a>
+                <a href="#" style="color: rgb(0, 0, 0);">PORTFOLIO</a>
+                <a href="#" style="color: rgb(0, 0, 0);">ABOUT US</a>
+                <a href="#" style="color: rgb(0, 0, 0);">CONTACT</a>
+            </div>
+          </center>
+          </div>
+            </div>
+          </div>-->
           <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="images/kin_w.png" width="80px" alt=""></a>
@@ -64,10 +71,10 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item " >
-                      <a class="nav-link" href="index.html">HOME</a>
+                      <a class="nav-link active" href="index.html" aria-current="page">HOME</a>
                     </li>
                     <li class="nav-item" >
-                      <a class="nav-link active" href="product.html" aria-current="page">PRODUCT</a>
+                      <a class="nav-link" href="product.html">PRODUCT</a>
                     </li>
                     <li class="nav-item" >
                       <a class="nav-link" href="#">PORTFOLIO</a>
@@ -104,212 +111,392 @@
             </div>
           </nav>
     </header>
-    <!--End Header -->
+		
+
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-6 mt-5">
+							<div class="intro-excerpt mt-5">
+								<h2 style="color: white;">Discover the enduring elegance<span clsas="d-block"> of transformed aluminum.</span></h2>
+								<p class="mb-4">Our "Timeless Appeal" Aluminum blends timeless style with modern innovation.
+									Inspired by the Japanese art of Kintsugi,
+									 this aluminum piece celebrates the beauty of imperfections and the enduring power of transformation. 
+									 It's more than just aluminum
+								   – it's a statement piece.</p>
+								<p><a href="#" class="btn btn-white-outline">Explore</a></p>
+							</div>
+						</div>
+						<!--
+            <div class="col-lg-6">
+							<div class="hero-img-wrap">
+								<img src="#" class="img-fluid">
+							</div>
+						</div>
+             -->
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+	
+		<!-- Start Product Section -->
+		<div class="product-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+					<!-- Start Column 1 --> 
+					<div class="col-12">
+						<h2 class="mb-12 section-title">The Art of Aluminum</h2>
+						<p class="mb-12">Our "Timeless Appeal" Aluminum blends timeless style with modern innovation.
+							 Inspired by the Japanese art of Kintsugi,
+							  this aluminum piece celebrates the beauty of imperfections and the enduring power of transformation. 
+							  It's more than just aluminum
+							– it's a statement piece. </p>
+						<p><a href="shop.html" class="btn">Explore</a></p>
+					</div> 
+					<!-- End Column 1 -->
+				</div>
+					
+					<div class="col-lg-8">
+						<div class="row">
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="cart.html">
+							<img style="border-radius: 18px;" src="images/fc1.jpg" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Facade</h3>
+							<h6 class="product-price " style="color: rgba(101, 101, 101, 0.929);">ViewMore</h6>
+
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="cart.html">
+							<img style="border-radius: 18px;"  src="images/fe1.jpg" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Fence</h3>
+							<h6 class="product-price " style="color: rgba(101, 101, 101, 0.929);">ViewMore</h6>
+
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 3 -->
+
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="cart.html">
+							<img style="border-radius: 18px;" src="images/p4.jpg" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Pergola</h3>
+							<h6 class="product-price " style="color: rgba(101, 101, 101, 0.929);">ViewMore</h6>
+
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 4 -->
+
+					<!-- Start Column 5 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="cart.html">
+							<img style="border-radius: 18px;" src="images/fg1.jpg" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Fence Gate</h3>
+							<h6 class="product-price " style="color: rgba(101, 101, 101, 0.929);">ViewMore</h6>
+
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 5 -->
+
+					<!-- Start Column 6 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="cart.html">
+							<img style="border-radius: 18px;" src="images/t3.jpg" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Terrace</h3>
+							<h6 class="product-price " style="color: rgba(101, 101, 101, 0.929);">ViewMore</h6>
+
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 6 -->
+
+					</div>
+				</div>
+					
+
+				</div>
+			</div>
+		</div>
+		<!-- End Product Section -->
+
+		<!-- Start Why Choose Us Section -->
+		<div class="why-choose-section" style="background-color: rgba(215, 215, 215, 0.365);" >
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6">
+						<h2 class="section-title">Why Choose Us</h2>
+						<p style="font-family: prompt;">เรามุ่งมั่นที่จะให้บริการที่มีคุณภาพสูงสุดและเป็นไปตามมาตรฐานที่เราตั้งไว้ เราเชื่อมั่นในความเชื่อถือที่ลูกค้ามอบให้และพยายามทุ่มเทในการรักษามาตรฐานไว้</p>
+
+						<div class="row my-5">
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/truck.svg" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Fast Service</h3>
+									<p style="font-family: prompt;">การให้บริการลูกค้าอย่างคุ้มค่าและมีประสิทธิภาพ โดยบริการที่ดีและรวดเร็วจะช่วยให้ลูกค้ามีประสบการณ์ที่ดีในการใช้ผลิตภัณฑ์และบริการของเรา</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/bag.svg" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Easy to Shop</h3>
+									<p style="font-family: prompt;"> เรามีการสื่อสารกับลูกค้าอย่างรวดเร็วและใส่ใจ การตอบโต้ต่อคำถามหรือความข้องใจของลูกค้าที่มีให้ทุกขั้นตอนของการสั่งซื้อ</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/support.svg" alt="Image" class="imf-fluid">
+									</div>
+									<h3>24/7 Support</h3>
+									<p style="font-family: prompt;">ความพร้อมให้บริการ: เราเข้าใจว่าปัญหาอาจเกิดขึ้นได้ทุกเมื่อ ดังนั้นเรามุ่งมั่นที่จะมีบริการสนับสนุนที่พร้อมให้บริการตลอดเวลาเพื่อช่วยแก้ปัญหาของลูกค้าอย่างรวดเร็ว</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/return.svg" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Consult & Product</h3>
+									<p style="font-family: prompt;">เป็นบริการที่เราให้แก่ลูกค้าเพื่อเลือกสินค้าที่เหมาะสมและตอบสนองต่อความต้องการของลูกค้าเขาอย่างเหมาะสม นี่คือวิธีที่เรามุ่งมั่นที่จะให้บริการประสบการณ์ที่ดีที่สุดให้แก่ลูกค้าของเรา</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="img-wrap">
+							<img src="images/fc1.jpg" alt="Image" class="img-fluid">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Why Choose Us Section -->
+
+		<!-- Start We Help Section -->
+		<div class="we-help-section">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<div class="imgs-grid">
+							<div class="grid grid-1"><img src="images/f1.jpg" alt="Untree.co"></div>
+							<div class="grid grid-2"><img src="images/f3.jpg" alt="Untree.co"></div>
+							<div class="grid grid-3"><img src="images/t2.jpg" alt="Untree.co"></div>
+						</div>
+					</div>
+					<div class="col-lg-5 ps-lg-5">
+						<h2 class="section-title mb-4">We Help You Make Modern  Design</h2>
+						<p style="font-family: prompt;">
+							เราช่วยคุณสร้างการออกแบบทันสมัยสำหรับวัสดุอลูมิเนียม! ไม่ว่าคุณจะกำลังมองหาการออกแบบที่สวยงามและทันสมัยสำหรับโครงการของคุณหรือไม่ก็คือการพัฒนาผลิตภัณฑ์ใหม่ ทีมของเราพร้อมเสมอที่จะช่วยคุณให้ได้ความสำเร็จ! ติดต่อเราวันนี้เพื่อเริ่มต้นการทำงานของคุณในโลกของการออกแบบทันสมัย!</p>
+
+						<ul style="font-family: prompt;" class="list-unstyled custom-list my-4">
+							<li>เอกลักษณ์เฉพาะตัว</li>
+							<li>การยกระดับด้วยอลูมิเนียม</li>
+							<li>ออกแบบอลูมิเนียมเข้ากับยุกต์สมัย</li>
+							<li>ความสวยงามที่ลงตัว</li>
+						</ul>
+						<p><a herf="#" class="btn">Explore</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End We Help Section -->
+
+		<!-- Start Popular Product -->
+		<div class="popular-product">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="images/t3.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Terrace</h3>
+								<p style="font-family: prompt;">สัมผัสคุณสมบัติพิเศษของวัสดุอลูมิเนียม ความแข็งแรง ความทนทานต่อสภาพอากาศ และการต้านการกัดกร่อน</p>
+								<p><a href="#">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="images/fe1.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Fence</h3>
+								<p style="font-family: prompt;">สัมผัสคุณสมบัติพิเศษของวัสดุอลูมิเนียม ความแข็งแรง ความทนทานต่อสภาพอากาศ และการต้านการกัดกร่อน</p>
+								<p><a href="#">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="images/fc1.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Facade</h3>
+								<p style="font-family: prompt;">สัมผัสคุณสมบัติพิเศษของวัสดุอลูมิเนียม ความแข็งแรง ความทนทานต่อสภาพอากาศ และการต้านการกัดกร่อน</p>
+								<p><a href="#">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Popular Product -->
+
+		<!-- Start Blog Section -->
+		<div class="blog-section" style="background-color: rgba(215, 215, 215, 0.365);">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-6">
+						<h2 class="section-title">Recent Blog</h2>
+					</div>
+					<div class="col-md-6 text-start text-md-end">
+						<a href="#" class="more">View All Posts</a>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail"><img src="images/t3.jpg" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a href="#">First Time Home Owner Ideas</a></h3>
+								<div class="meta">
+									<span>by <a href="#">K I N Thailand</a></span> <span>on <a href="#">April 22, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail"><img src="images/f3.jpg" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
+								<div class="meta">
+									<span>by <a href="#">K I N Thailand</a></span> <span>on <a href="#">April 22, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail"><img src="images/fc1.jpg" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
+								<div class="meta">
+									<span>by <a href="#">K I N Thailand</a></span> <span>on <a href="#">April 22, 2024</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Blog Section -->	
+		
+		<!-- ======= Footer ======= -->
   
-    <div id="imgg" style="padding-top: 67.4px; background-color: rgb(31, 31, 31);" >
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 py-5 align-self-center" data-aos="fade-up">
-                <center>
-                <h3 style="color: white;">Discover the enduring elegance</h3>
-                <h3 style="color: white;">of transformed aluminum.</h3>
-                <p class="mt-3">
-                    <a href="#2"><u><strong style="color: white;">View More</strong> </u></a>
-                </p>
-            </center>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="350">
-                <img src="assets/img/kin.png" style="filter: invert(1);" class="img-fluid" height="100%"> 
-            </div>
-            <div class="col-lg-4  align-self-center" data-aos="fade-up" data-aos-delay="700">
-                <center>
-                <p style="color: white;"><strong>COLOR</strong> </p>
-                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(251, 209, 157);"> </button>
-                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(239, 177, 101);"> </button>
-                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(165, 114, 51);"> </button>
-                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(73, 73, 73);"> </button>
-                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(249, 247, 245);"> </button>
-                <p class="mt-3">
-                    <span style="color: white;" class="p-1">
-                        New
-                    </span><br>
-                    <span style="color: white;" class="p-1">
-                        Roboto
-                    </span>
-                    <span style="color: white;" class="p-1">
-                        classic
-                    </span>
-                    <span style="color: white;" class="p-1">
-                        prompt
-                    </span>
-                </p>
-                </center>
-            </div>
-        </div>
-    </div>
-  </div>
-
-  
-             <!--donw Header -->
-    <div  class="shadow-sm mt-5">
-        <div class="container align-self-center mt-5">
-          <div class="row align-self-center">
-            <div class="col-12 align-self-center" data-aos="fade-up" data-aos-delay="350">
-                <!-- ***** Logo Start ***** -->
-                <!--
-                <center style="padding-bottom: 20px;">
-                <a href="#" class="logo">
-                  <u class="p-3"><strong>Dowload</strong></u>
-                </a>
-                <a href="#1" class="logo">
-                  <u class="p-3"><strong>Product</strong></u>
-                </a>
-                <a href="#1" class="logo">
-                  <u class="p-3"><strong>How Ourder</strong></u>
-                </a> -->
-                </center>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-
- 
-
-    <!-- start container หลัก -->
-    <div class="container mt-5">
-      
-      
-      <div class="row d-flex mt-5">
-      <div class="col-lg-4">
-
-        <h4 class="" style="color: black;" data-aos="fade-right"><strong>The Art of Aluminum</strong></h4> 
-        <p style="color: black;" data-aos="fade-right" data-aos-delay="400">
-          Our "Timeless Appeal" Aluminum blends 
-          timeless style with modern innovation. 
-          Inspired by the Japanese art of Kintsugi, 
-          this aluminum piece celebrates the beauty of 
-          imperfections and the enduring power of 
-          transformation. It's more than just aluminum 
-          <br>– it's a statement piece. 
-         </p>
-
-      <img src="assets/img/kin.jpg" class="img-fluid" data-aos="fade-right">
-      </div>
-      <div class="col-lg-8 ">
-        <center data-aos="fade-up">
-        <img src="assets/img/trr.jpg" class="img-fluid mt-3">
-        </center>
-      </div>
-      
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-lg-6" data-aos="fade-right">
-          <img src="assets/img/54.jpg" class="img-fluid h-100">
-        </div>
-        <div class="col-lg-6" data-aos="fade-right">
-          <img src="assets/img/59.jpg" class="img-fluid h-100">
-        </div>
-      </div>
-      <div class="row mt-5" style="color: black;">
-      <div  class="col-lg-6">
-      <h4 data-aos="fade-right">KINTHAILAND</h4> 
-        <p data-aos="fade-right" data-aos-delay="300">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit itaque recusandae! Sed incidunt culpa consequuntur atque nemo expedita, nam officiis numquam ab aperiam. Nam nemo aliquam sint veritatis, a dolor ab rerum esse voluptas? Minima itaque laboriosam corporis consequatur ullam deleniti. Fuga quod, mollitia ipsam aliquid impedit quibusdam labore nisi omnis consectetur officiis in temporibus cum dolor dicta ab quisquam sunt veritatis laboriosam quia dolore. Maiores quasi atque praesentium eos, vitae, ipsam dolores est, debitis asperiores ut cum laborum ducimus placeat quas expedita accusantium? Nobis mollitia ipsam provident? Modi nostrum quaerat eligendi porro obcaecati harum. Perspiciatis assumenda similique nemo ut! Minima, ab. Et, veniam voluptates obcaecati ducimus laborum cumque sapiente eligendi beatae corporis, illum fugit, iure inventore neque facilis?
-        </p>
-      </div>
-      <div class="col-lg-6">
-        <h4 data-aos="fade-right">Collation</h4>
-        <p data-aos="fade-right" data-aos-delay="300">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus in quis nobis possimus ex quisquam quos, necessitatibus, unde quidem odit aliquid voluptate laudantium itaque blanditiis nesciunt alias iste, quasi reiciendis nostrum vitae. Temporibus, vero ipsa consequuntur odio veniam officiis accusamus est autem ducimus aut quasi. Necessitatibus, et. Repellendus doloribus quia veritatis sapiente odit eligendi alias assumenda, molestias ipsam maiores necessitatibus accusamus fuga, earum reprehenderit enim sint. Suscipit deserunt nisi necessitatibus at corporis, id quidem soluta iste officia consequatur natus qui porro non ab error quis? Beatae dolorem, temporibus iste nulla doloribus pariatur minus facilis quaerat ex nam dolorum cum vitae!
-        </p>
-      </div>
-    </div>
-    </div>
+		<footer id="footer" class="footer" style="background-color:  black;">
     
-   
+			<div class="container">
+	   
+				  <div class="row justify-content-between" style="border-bottom: solid 1.5px rgb(255, 255, 255); padding-top: 100px; padding-bottom: 40px;">
+					
+					<div class="col-9">
+					  <div class="col">
+						<h2 data-aos="fade-up" style="color: white;">Discover The Timeless Appeal</h2>
+					  </div>
+					  <div class="col">
+						<p data-aos="fade-up" data-aos-delay="200" style="color: white;">Schedule a Consultation with Our Experts</p>
+					  </div>
+					</div>
+					<div class="col-md-3 text-end" data-aos="fade-up">
+					<button class="btn btn-get-started " style="background-color: aliceblue;"><a href="services.html">Get In Touch</a> </button>
+					</div>
+				  </div>
+	  
+			  <div class="d-flex" style="padding-top: 35px; padding-bottom: 30px;" data-aos="fade-right">
+				<div class="col-4">
+				  <!-- ลิกก์ logo kin-->
+				<a href="#"><img class="inverse-image mt-4 " src="images/kin_b.png" height="45px"/></a>
+			  </div>
+			  <!-- © kin -->
+			  <div class="text-center col-4 align-self-end" style="color: white;">
+				&copy; 2023<span> KIN</span>
+			  </div>
+			  <!-- social link -->
+			  <div class="social-links text-end col-4 align-self-end " style="font-size: 24px;">
+				<a href="#" class="line"><i class="bx bxl-line" style="color: aliceblue; padding-left: 10px;"></i></a>
+				<a href="https://m.facebook.com/KINThailand2023/" target="_blank" class="facebook"><i class="bx bxl-facebook" style="color: aliceblue; padding-left: 10px;"></i></a>
+				<a href="https://www.instagram.com/kin.thailand?igsh=MTFuOTdzYnppYnp5Yw%3D%3D&utm_source=qr" target="_blank" class="instagram"><i class="bx bxl-instagram" style="color: aliceblue; padding-left: 10px;"></i></a>
+			  </div>
+			  </div>
+			</div>
+	  
+		  </footer>
+		  <!-- End Footer -->
 
-    <!-- ======= Footer ======= -->
-  
-    <footer id="footer" class="footer" style="background-color:  black;">
-    
-      <div class="container">
- 
-            <div class="row justify-content-between" style="border-bottom: solid 1.5px rgb(255, 255, 255); padding-top: 100px; padding-bottom: 40px;">
-              
-              <div class="col-9">
-                <div class="col">
-                  <h2 data-aos="fade-up">Discover The Timeless Appeal</h2>
-                </div>
-                <div class="col">
-                  <p data-aos="fade-up" data-aos-delay="200">Schedule a Consultation with Our Experts</p>
-                </div>
-              </div>
-              <div class="col-md-3 text-end" data-aos="fade-up">
-              <button class="btn btn-get-started " style="background-color: aliceblue;">Get in touch</button>
-              </div>
-            </div>
+	
+		<!-- Template Main JS File
+	  <script src="assets/js/main.js"></script> -->
+	
+		<!--script ควบคุม Animation -->
+		<script>
+		  // รอให้หน้าเว็บโหลดเสร็จก่อนที่จะเรียกใช้ AOS
+		  document.addEventListener("DOMContentLoaded", function() {
+			// เรียกใช้ AOS
+			AOS.init({
+			  duration: 1250, // ระยะเวลาที่ animation ใช้
+			  once: false, // ให้ทำ animation ทุกรอบเมื่อเลื่อน
+			});
+		  });
+		</script>
+		 <!-- End script ควบคุม Animation -->
 
-        <div class="d-flex" style="padding-top: 35px; padding-bottom: 30px;" data-aos="fade-right">
-          <div class="col-4">
-            <!-- ลิกก์ logo kin-->
-          <a href="#"><img class="inverse-image mt-4 " src="images/kin_w.png" height="45px"/></a>
-        </div>
-        <!-- © kin -->
-        <div class="text-center col-4 align-self-end">
-          &copy; 2023<span> KIN</span>
-        </div>
-        <!-- social link -->
-        <div class="social-links text-end col-4 align-self-end " style="font-size: 24px;">
-          <a href="#" class="twitter"><i class="bx bxl-twitter" style="color: aliceblue; padding-left: 10px;"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook" style="color: aliceblue; padding-left: 10px;"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram" style="color: aliceblue; padding-left: 10px;"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype" style="color: aliceblue; padding-left: 10px;"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin" style="color: aliceblue; padding-left: 10px;"></i></a>
-        </div>
-        </div>
-      </div>
+		<script src="assets/js/bootstrap_product.bundle.min.js"></script>
+		<script src="assets/js/tiny-slider_product.js"></script>
+		<script src="assets/js/custom_product.js"></script>
+	</body>
 
-    </footer>
-    <!-- End Footer -->
-
-    <a  href="#"  class="scroll-top d-flex align-items-center justify-content-center">
-      <i class="bi bi-arrow-up-short"></i>
-    </a>
-
-    <!--
-    <div id="preloader">
-      <div class="line"></div>
-    </div> -->
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File 
-    <script src="assets/js/main.js"></script>-->
-
-    <!--script ควบคุม Animation -->
-    <script>
-      // รอให้หน้าเว็บโหลดเสร็จก่อนที่จะเรียกใช้ AOS
-      document.addEventListener("DOMContentLoaded", function() {
-        // เรียกใช้ AOS
-        AOS.init({
-          duration: 1250, // ระยะเวลาที่ animation ใช้
-          once: false, // ให้ทำ animation ทุกรอบเมื่อเลื่อน
-        });
-      });
-    </script>
-     <!-- End script ควบคุม Animation -->
-
-  </body>
 </html>
