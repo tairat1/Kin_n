@@ -1,71 +1,85 @@
 <!DOCTYPE html>
-a<html lang="en">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <head>
-        <meta charset="utf-8">
-        <title>Product-Detail</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+    <title>kinthailand</title>
+    <meta content="" name="KIN THAiLAND 3" />
+    <meta content="" name="keywords" />
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="" rel="stylesheet"/>
 
-        <!-- Libraries Stylesheet -->
-        <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!--Start-Font-prompt --> 
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--End-Font-prompt -->
 
-        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    />
+    <link  href="assets/vendor/bootstrap-icons/bootstrap-icons.css"  rel="stylesheet"/>
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link  href="assets/vendor/glightbox/css/glightbox.min.css"  rel="stylesheet"/>
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <!-- css กำหนดเเองเพิ่มเติมในไฟล์ css/custom.css -->
+<!-- css กำหนดเเองเพิ่มเติมในไฟล์ css/custom.css -->
+    <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+  #imgg {
+    width: 100%;
+    /* ../../ = ย้อนโฟลเดอร์นอกสุด และเข้าถึง ชั้นโฟลเดอร์  */
+    background: url("images/img274.jpg");
+    background-size: cover;
+  }
+  </style>
+  </head>
 
-        <!-- เทมเพลท bootstarp 5 จำเป็นต้องใช้แยกกันเนื่องจากเวลาทำน้อยครับ-->
-        <!-- สังเกตไฟล์ตามลิงก์เอาครับ-->
-        <link href="assets/css/style.css" rel="stylesheet">
-        
-
-
-    </head>
-
-    <body style="background-color: rgb(252, 255, 253)">
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar & Hero Start -->
-        <nav class="navbar navbar-dark  fixed-top" style="background-color:rgb(33, 37, 41);">
+  <div style="background-color: rgb(252, 255, 253)">
+    <header>
+          <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="images/kin_w.png" width="80px" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="background-color:rgb(33, 37, 41);">
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 style="color: white;" class="offcanvas-title" id="offcanvasDarkNavbarLabel">K I N Thailand</h5>
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">K I N Thailand</h5>
+                  <div class="social-links text-end col-4 align-self-end " style="font-size: 24px;">
+                    <a href="#" class="line"><i class="bx bxl-line" style="color: aliceblue; padding-left: 10px;"></i></a>
+                    <a href="https://m.facebook.com/KINThailand2023/" target="_blank" class="facebook"><i class="bx bxl-facebook" style="color: aliceblue; padding-left: 10px;"></i></a>
+                    <a href="https://www.instagram.com/kin.thailand?igsh=MTFuOTdzYnppYnp5Yw%3D%3D&utm_source=qr" target="_blank" class="instagram"><i class="bx bxl-instagram" style="color: aliceblue; padding-left: 10px;"></i></a>
+                </div>
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item " >
-                      <a class="nav-link" href="index.html" aria-current="page">HOME</a>
+                      <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item" >
-                      <a class="nav-link" href="product.html">PRODUCT</a>
+                      <a class="nav-link active" href="product.html" aria-current="page">PRODUCT</a>
                     </li>
                     <li class="nav-item" >
-                      <a class="nav-link active" href="#">PORTFOLIO</a>
+                      <a class="nav-link" href="#">PORTFOLIO</a>
                     </li>
                     <li class="nav-item" >
                       <a class="nav-link" href="#">ABOUT US</a>
@@ -98,405 +112,216 @@ a<html lang="en">
               </div>
             </div>
           </nav>
-        <!-- Navbar & Hero End -->
-
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4">PortFolio</h1>
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.html" style="color: rgb(135, 128, 128)!important;">Home</a></li>
-                    <li class="breadcrumb-item active text-white">Portfolio</li>
-                </ol>    
-            </div>
-        </div>
-        <!-- Header End -->
-
-        <!-- Destination Start -->
-        <div class="container-fluid destination py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                    <h5 class="section-title px-3">Destination</h5>
-                    <h1 class="mb-0">Popular Destination</h1>
-                </div>
-                <div class="tab-class text-center">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
-                                <span class="text-dark" style="width: 150px;">All</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a  class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
-                                <span  class="text-dark" style="width: 150px;">Facde</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
-                                <span class="text-dark" style="width: 150px;">Fence</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
-                                <span class="text-dark" style="width: 150px;">Pergola</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
-                                <span class="text-dark" style="width: 150px;">Fence Gate</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-6">
-                                <span class="text-dark" style="width: 150px;">Terrace</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-xl-8">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="images/img-grid-3.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                                    <h4 class="text-white mb-2 mt-3">New York City</h4>
-                                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="images/img-grid-3.jpg" data-lightbox="destination-1"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="images/img-grid-2.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                                    <h4 class="text-white mb-2 mt-3">Las vegas</h4>
-                                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="images/img-grid-2.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="images/img-grid-2.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                                    <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="images/img-grid-2.jpg" data-lightbox="destination-7"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="images/la3.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                                    <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="images/la3.jpg" data-lightbox="destination-8"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4">
-                                    <div class="destination-img h-100">
-                                        <img class="img-fluid rounded w-100 h-100" src="images/img23.jpg" style="object-fit: cover; min-height: 300px;" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="images/img23.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="images/img-grid-1.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="images/img-grid-1.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="images/img-grid-2.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="images/img-grid-2.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="images/img-grid-3.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="images/img-grid-3.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="images/la2.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="images/la2.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="images/img13.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="images/img13.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="images/img3.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="images/img3.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/destination-6.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/destination-6.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-4" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/destination-5.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/destination-6.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/destination-6.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-5" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/destination-5.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/destination-6.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/destination-6.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-6" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/destination-5.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/destination-6.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/destination-6.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Destination End -->
-
-        <!-- Subscribe Start -->
-        <div class="container-fluid subscribe py-5">
-            <div class="container text-center py-5">
-                <div class="mx-auto text-center" style="max-width: 900px;">
-                    <h5 class="subscribe-title px-3 text-dark">Product</h5>
-                    <h1 class="text-dark mb-4">Our Newsletter</h1>
-                    <p class="text-dark mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.
-                    </p>
-                    <div class="position-relative mx-auto">
-                       
-                        <button type="button" class="btn btn-dark rounded-pill">ViewMore</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Subscribe End -->
-
-        <!-- ======= Footer ======= -->
+    </header>
+    <!--End Header -->
   
-		<footer id="footer" class="footer" style="background-color:  black;">
+    <div id="imgg" style="padding-top: 67.4px; background-color: rgb(31, 31, 31);" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 py-5 align-self-center" data-aos="fade-up">
+               
+                <h2 style="color: white;">Product Pregola</h2>
+                <h4 style="color: white;">Discover the enduring elegance</h4>
+                <h4 style="color: white;">of transformed aluminum.</h4>
+                
+           
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="350">
+                <img src="assets/img/kin.png" style="filter: invert(1);" class="img-fluid" height="100%"> 
+            </div>
+            <div class="col-lg-4  align-self-center" data-aos="fade-up" data-aos-delay="700">
+                <center>
+                <p style="color: white;"><strong>COLOR</strong> </p>
+                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(251, 209, 157);"> </button>
+                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(239, 177, 101);"> </button>
+                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(165, 114, 51);"> </button>
+                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(73, 73, 73);"> </button>
+                <button style="width: 35px; height: 35px; border-radius: 50%; border: 0px; background-color: rgb(249, 247, 245);"> </button>
+                <p class="mt-3">
+                    <span style="color: white;" class="p-1">
+                        New
+                    </span><br>
+                    <span style="color: white;" class="p-1">
+                        Roboto
+                    </span>
+                    <span style="color: white;" class="p-1">
+                        classic
+                    </span>
+                    <span style="color: white;" class="p-1">
+                        prompt
+                    </span>
+                </p>
+                </center>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  
+             <!--donw Header -->
+    <div  class="shadow-sm mt-5">
+        <div class="container align-self-center mt-5">
+          <div class="row align-self-center">
+            <div class="col-12 align-self-center" data-aos="fade-up" data-aos-delay="350">
+                <!-- ***** Logo Start ***** -->
+                <!--
+                <center style="padding-bottom: 20px;">
+                <a href="#" class="logo">
+                  <u class="p-3"><strong>Dowload</strong></u>
+                </a>
+                <a href="#1" class="logo">
+                  <u class="p-3"><strong>Product</strong></u>
+                </a>
+                <a href="#1" class="logo">
+                  <u class="p-3"><strong>How Ourder</strong></u>
+                </a> -->
+                </center>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+ 
+
+    <!-- start container หลัก -->
+    <div class="container mt-5">
+      
+      
+      <div class="row d-flex mt-5">
+      <div class="col-lg-4">
+
+        <h4 class="" style="color: black;" data-aos="fade-right"><strong>The Art of Aluminum</strong></h4> 
+        <p style="color: black;" data-aos="fade-right" data-aos-delay="400">
+          Our "Timeless Appeal" Aluminum blends 
+          timeless style with modern innovation. 
+          Inspired by the Japanese art of Kintsugi, 
+          this aluminum piece celebrates the beauty of 
+          imperfections and the enduring power of 
+          transformation. It's more than just aluminum 
+          <br>– it's a statement piece. 
+         </p>
+
+      <img src="assets/img/kin.jpg" class="img-fluid" data-aos="fade-right">
+      </div>
+      <div class="col-lg-8 ">
+        <center data-aos="fade-up">
+        <img src="images/d-1.jpg" class="img-fluid mt-3">
+        </center>
+      </div>
+      
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="images/p6.jpg" class="img-fluid h-100">
+        </div>
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="images/p4.jpg" class="img-fluid h-100">
+        </div>
+      </div>
+      <div class="row mt-5" style="color: black;">
+      <div  class="col-lg-6">
+      <h4 data-aos="fade-right">Pregola</h4> 
+        <p style="font-family: prompt;" data-aos="fade-right" data-aos-delay="300">
+            อะลูมิเนียมมีหลังคาคลุมสวนคือคำตอบที่สมบูรณ์แบบ Pergola อะลูมิเนียมมีหลังคา มีหลังคาบานเกล็ดที่สามารถเปิดหรือปิดได้ตามต้องการ เพื่อปกป้องอ่างน้ำร้อนหรือสปาว่ายน้ำของคุณจากฝน ลม และแสงแดด บานเกล็ดสามารถปรับองศาได้อย่างง่ายดาย และสามารถปรับมุมต่างๆ ได้ตลอดเวลา เพื่อให้พื้นที่กลางแจ้งของคุณปลอดภัย เย็น และแห้งในทุกสภาพอากาศ
+            ลองจินตนาการถึงการผ่อนคลายและความบันเทิงในสวนหลังบ้านของคุณโดยไม่มีแสงแดด เพลิดเพลินกับสปากลางแจ้ง หรือจัดงานปาร์ตี้ในทุกสภาพอากาศ ซุ้มไม้เลื้อยอะลูมิเนียมที่มีหลังคามุงด้วยหลังคาของ immer จะเปลี่ยนประสบการณ์สวนหรือพื้นที่เชิงพาณิชย์ของคุณ
+        </p>
+      </div>    
+      <div class="col-lg-6">
+        <h4 data-aos="fade-right">Dimension</h4>
+        <p data-aos="fade-right" data-aos-delay="300">
+            Product : Pergola
+            Product Description : height 2.9 meter, 
+            length 3.0 meter, width 4.0 meter 
+            (Customize)
+            Color : Dark Grey Sahara / White Smooth / Black Smooth / Wood grain 
+            (Color made to order) 
+        </p>
+      </div>
+    </div>
+    </div>
     
-			<div class="container">
-	   
-				  <div class="row justify-content-between" style="border-bottom: solid 1.5px rgb(255, 255, 255); padding-top: 100px; padding-bottom: 40px;">
-					
-					<div class="col-9">
-					  <div class="col">
-						<h2 data-aos="fade-up" style="color: white;">Discover The Timeless Appeal</h2>
-					  </div>
-					  <div class="col">
-						<p data-aos="fade-up" data-aos-delay="200" style="color: white;">Schedule a Consultation with Our Experts</p>
-					  </div>
-					</div>
-					<div class="col-md-3 text-end" data-aos="fade-up">
-					<button class="btn btn-get-started " style="background-color: aliceblue;"><a href="services.html">Get In Touch</a> </button>
-					</div>
-				  </div>
-	  
-			  <div class="d-flex" style="padding-top: 35px; padding-bottom: 30px;" data-aos="fade-right">
-				<div class="col-4">
-				  <!-- ลิกก์ logo kin-->
-				<a href="#"><img class="inverse-image mt-4 " src="images/kin_w.png" height="45px"/></a>
-			  </div>
-			  <!-- © kin -->
-			  <div class="text-center col-4 align-self-end" style="color: white;">
-				&copy; 2023<span> KIN</span>
-			  </div>
-			  <!-- social link -->
-			  <div class="social-links text-end col-4 align-self-end " style="font-size: 24px;">
-				<a href="#" class="line"><i class="bx bxl-line" style="color: aliceblue; padding-left: 10px;"></i></a>
-				<a href="#" class="facebook"><i class="bx bxl-facebook" style="color: aliceblue; padding-left: 10px;"></i></a>
-				<a href="#" class="instagram"><i class="bx bxl-instagram" style="color: aliceblue; padding-left: 10px;"></i></a>
-			  </div>
-			  </div>
-			</div>
-	  
-		  </footer>
-		  <!-- End Footer -->
-        
-        
+   
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <!-- ======= Footer ======= -->
+  
+    <footer id="footer" class="footer" style="background-color:  black;">
+    
+      <div class="container">
+ 
+            <div class="row justify-content-between" style="border-bottom: solid 1.5px rgb(255, 255, 255); padding-top: 100px; padding-bottom: 40px;">
+              
+              <div class="col-9">
+                <div class="col">
+                  <h2 data-aos="fade-up">Discover The Timeless Appeal</h2>
+                </div>
+                <div class="col">
+                  <p data-aos="fade-up" data-aos-delay="200">Schedule a Consultation with Our Experts</p>
+                </div>
+              </div>
+              <div class="col-md-3 text-end" data-aos="fade-up">
+              <button class="btn btn-get-started " style="background-color: aliceblue;">Get in touch</button>
+              </div>
+            </div>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/lib/easing/easing.min.js"></script>
-        <script src="assets/lib/waypoints/waypoints.min.js"></script>
-        <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
-        
+        <div class="d-flex" style="padding-top: 35px; padding-bottom: 30px;" data-aos="fade-right">
+          <div class="col-4">
+            <!-- ลิกก์ logo kin-->
+          <a href="#"><img class="inverse-image mt-4 " src="images/kin_w.png" height="45px"/></a>
+        </div>
+        <!-- © kin -->
+        <div class="text-center col-4 align-self-end">
+          &copy; 2023<span> KIN</span>
+        </div>
+        <!-- social link -->
+        <div class="social-links text-end col-4 align-self-end " style="font-size: 24px;">
+            <a href="#" class="line"><i class="bx bxl-line" style="color: aliceblue; padding-left: 10px;"></i></a>
+            <a href="https://m.facebook.com/KINThailand2023/" target="_blank" class="facebook"><i class="bx bxl-facebook" style="color: aliceblue; padding-left: 10px;"></i></a>
+            <a href="https://www.instagram.com/kin.thailand?igsh=MTFuOTdzYnppYnp5Yw%3D%3D&utm_source=qr" target="_blank" class="instagram"><i class="bx bxl-instagram" style="color: aliceblue; padding-left: 10px;"></i></a>
+        </div>
+        </div>
+      </div>
 
-        <!-- Template Javascript -->
-        <script src="assets/jss/main.js"></script>
-    </body>
+    </footer>
+    <!-- End Footer -->
 
+    <a  href="#"  class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!--
+    <div id="preloader">
+      <div class="line"></div>
+    </div> -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File 
+    <script src="assets/js/main.js"></script>-->
+
+    <!--script ควบคุม Animation -->
+    <script>
+      // รอให้หน้าเว็บโหลดเสร็จก่อนที่จะเรียกใช้ AOS
+      document.addEventListener("DOMContentLoaded", function() {
+        // เรียกใช้ AOS
+        AOS.init({
+          duration: 1250, // ระยะเวลาที่ animation ใช้
+          once: false, // ให้ทำ animation ทุกรอบเมื่อเลื่อน
+        });
+      });
+    </script>
+     <!-- End script ควบคุม Animation -->
+
+  </body>
 </html>
