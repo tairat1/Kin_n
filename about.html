@@ -1,569 +1,369 @@
-<!DOCTYPE html>
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="images/k1.ico">
+  <link href="images/k1.ico" rel="icon">
+  <link href="images/k1.ico" rel="apple-touch-icon">
 
-    <title>KIN THAiLAND</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap_product.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="assets/css/tiny-slider_product.css" rel="stylesheet">
+		<link href="assets/css/style_product.css" rel="stylesheet">
+		<link href="assets/css/custom.css" rel="stylesheet" />
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<title>kin-about</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+		<script>
+			var myOffcanvas = document.getElementById("myOffcanvas");
+			myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
+				// do something...
+			});
+			</script>
+	</head>
 
-    <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
-    />
-    <link  href="assets/vendor/bootstrap-icons/bootstrap-icons.css"  rel="stylesheet"/>
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <link  href="assets/vendor/glightbox/css/glightbox.min.css"  rel="stylesheet"/>
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <!-- Template Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <script>
-      var myOffcanvas = document.getElementById("myOffcanvas");
-      myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
-        // do something...
-      });
-    </script>
-
-    <!-- =======================================================
-  * Template Name: PhotoFolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  </head>
-
-  <body style="background-color: rgb(252, 255, 253)">
-    <div class="small"></div>
-    <div class="big"></div>
-
-    <div  class="offcanvas offcanvas-start"  tabindex="-1"  id="offcanvasExample"  aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Product</h5>
-        <button  type="button"  class="btn-close text-reset"  data-bs-dismiss="offcanvas"  aria-label="Close"> 
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <!-- <div style="margin-bottom:1px!important;  line-height: 2;">
-                                 เนื้อหาย่อพอสังเขป
-                               </div> -->
-        <!-- MENU PRODUCT-->
-        <div class="featured section col-lg-12 mt-3">
-          <div class="section-heading">
-            <h6>| Featured Product</h6>
-            <h2>K I N &amp;PRODUCT</h2>
-          </div>
-          <div class="accordion" id="accordionExample">
-            <!-- start CANOPY -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button accordion-button:hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <i class="fa-solid fa-ghost"></i>&nbsp;Product 1
-                </button>
-              </h2>
-              <div  id="collapseOne"  class="accordion-collapse collapse"  aria-labelledby="headingOne"  data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Product 1</h5>
-                      <p class="card-text">Product 1</p>
-                      <p class="card-text">
-                        <small class="text-muted">Product 1</small>
-                      </p>
-                    </div>
-                    <img  src="assets/img/sm/sm2.jpg"  class="card-img-bottom"  alt="..."/>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end  -->
-            <!-- start CANOPY -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button accordion-button:hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <i class="fa-solid fa-ghost"></i>&nbsp;Product 2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Product 2</h5>
-                      <p class="card-text">Product 2</p>
-                      <p class="card-text">
-                        <small class="text-muted">Product 2</small>
-                      </p>
-                    </div>
-                    <img  src="assets/img/sm/sm2.jpg"  class="card-img-bottom"  alt="..."/>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end  -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ======= Hero3 Section ======= -->
-    <section id="hero3" class="d-flex flex-column justify-content-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="1700">
-        <h1>K I N THAILAND</h1>
-        <p>
-          I'm <span  class="typed"  data-typed-items="Designer, Developer, Freelancer, Photographer"> 
-              </span>
-        </p>
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-        <a href="#" class="btn-get-started scrollto mt-3">Get Started</a>
-      </div>
-    </section>
-    <!-- End Hero -->
-
-    <!--End Header -->
-    <header  class="header-area header-sticky shadow-sm"  style="position: sticky !important; top: 0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.php" class="logo">
-                <h1>KIN</h1>
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li>
-                  <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" >
-                    <svg   xmlns="http://www.w3.org/2000/svg"   height="2em"   viewBox="0 0 512 512" >
-                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                      <path d="M24 32C10.7 32 0 42.7 0 56V456c0 13.3 10.7 24 24 24H40c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24H24zm88 0c-8.8 0-16 7.2-16 16V464c0 8.8 7.2 16 16 16s16-7.2 16-16V48c0-8.8-7.2-16-16-16zm72 0c-13.3 0-24 10.7-24 24V456c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24H184zm96 0c-13.3 0-24 10.7-24 24V456c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24H280zM448 56V456c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24H472c-13.3 0-24 10.7-24 24zm-64-8V464c0 8.8 7.2 16 16 16s16-7.2 16-16V48c0-8.8-7.2-16-16-16s-16 7.2-16 16z"/> </svg> </a>
-                </li>
-              </ul>
-              <a  class="menu-trigger"  class="dropdown-toggle"  data-bs-toggle="offcanvas"  href="#offcanvasExample"  role="button"  aria-controls="offcanvasExample">
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
+	<body>
+    <header>
+      <!--
+      <div class="custom-padding-left">     
+        <div class="row header">
+             <div class="dropdown header">  
+            <nav  id="navbar" class="navbar nav-menu" style="z-index: 999;">
+            <navlogo class="logo-padding" style="position: fixed;" data-aos="fade-right">
+              <span><img style="position: fixed" class="inverse-image mt-4 " src="images/kin_b.png" height="45px"/></span>
+              </navlogo>
             </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+              <center>
+              <div class="dropdown-content">
 
-    <!-- SET 1-->
-    <!-- รูปซ้าย-->
-    <div class="row me-0 mt-5 shadow-sm" style="background-color: #fff">
-      <div class="col-lg-6">
-        <div class="rounded float-end">
-          <img src="assets/img/t/22.jpg" class="img-fluid" alt="" />
-        </div>
-      </div>
-      <div class="col-lg-6 content">
-        <div class="container">
-          <h6 class="mt-5" style="color: rgb(161, 161, 161)">K I N THAiLAND</h6>
-          <h1 class="mt-3" style="color: black">
-            A Beginning of Our Relationship
-          </h1>
-          <p class="fst-italic pb-3" style="color: black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos
-            distinctio enim dolorum quae minima iste dignissimos, corporis ut
-            sed porro et. Veritatis eos vel magni corrupti sunt laboriosam rem
-            deleniti laborum nihil, nisi eaque saepe hic officiis consequatur
-            provident doloremque magnam! Dicta porro excepturi aperiam ad
-            inventore! Dolor, voluptas?
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- รูปซ้าย-->
-    <div  class="row me-0 mt-5 shadow-sm"  style="background-color: rgb(249, 254, 254); padding-left: 0px;    padding-right: 0px;  ">
-      <div class="col-lg-6" style="padding-left: 0px; padding-right: 0px">
-        <img src="assets/img/t/2.jpg" class="img-fluid" alt="" />
-      </div>
-      <div class="col-lg-6 content">
-        <div class="container">
-          <h6 class="mt-5" style="color: rgb(161, 161, 161)">K I N THAiLAND</h6>
-          <h1 class="mt-3" style="color: black">
-            A Beginning of Our Relationship
-          </h1>
-          <p class="fst-italic pb-3" style="color: black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos
-            distinctio enim dolorum quae minima iste dignissimos, corporis ut
-            sed porro et. Veritatis eos vel magni corrupti sunt laboriosam rem
-            deleniti laborum nihil, nisi eaque saepe hic officiis consequatur
-            provident doloremque magnam! Dicta porro excepturi aperiam ad
-            inventore! Dolor, voluptas?
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- รูปขวา-->
-    <div class="row me-0 shadow-sm" style="background-color: rgb(249, 254, 254)">
-      <div class="col-lg-6 order-lg-2" style="padding-left: 0px; padding-right: 0px">
-        <img src="assets/img/t/3.jpg" class="img-fluid" alt="" />
-      </div>
-      <div class="col-lg-6 order-lg-1 content">
-        <div class="container">
-          <h6 class="mt-5" style="color: rgb(161, 161, 161)">K I N THAiLAND</h6>
-          <h1 class="mt-3" style="color: black">
-            A Beginning of Our Relationship
-          </h1>
-          <p class="fst-italic pb-3" style="color: black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos
-            distinctio enim dolorum quae minima iste dignissimos, corporis ut
-            sed porro et. Veritatis eos vel magni corrupti sunt laboriosam rem
-            deleniti laborum nihil, nisi eaque saepe hic officiis consequatur
-            provident doloremque magnam! Dicta porro excepturi aperiam ad
-            inventore! Dolor, voluptas?
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- END SET 1-->
-
-    <!-------------- SET 2---------------->
-    <!-- รูปซ้าย-->
-    <div class="row me-0 mt-5 shadow-sm" style="background-color: #fff">
-      <div class="col-lg-6">
-        <div class="rounded float-end">
-          <img src="assets/img/59.jpg" class="img-fluid" alt="" />
-        </div>
-      </div>
-      <div class="col-lg-6 content">
-        <div class="container">
-          <h6 class="mt-5" style="color: rgb(161, 161, 161)">K I N THAiLAND</h6>
-          <h1 class="mb-3" style="color: black">
-            A Beginning of Our Relationship
-          </h1>
-          <p class="fst-italic pb-3" style="color: black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos
-            distinctio enim dolorum quae minima iste dignissimos, corporis ut
-            sed porro et. Veritatis eos vel magni corrupti sunt laboriosam rem
-            deleniti laborum nihil, nisi eaque saepe hic officiis consequatur
-            provident doloremque magnam! Dicta porro excepturi aperiam ad
-            inventore! Dolor, voluptas?
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- รูปซ้าย-->
-    <div class="row me-0 mt-5 shadow-sm" style="background-color: rgb(248, 254, 254); padding-left: 0px; padding-right: 0px; "
-    >
-      <div class="col-lg-6" style="padding-left: 0px; padding-right: 0px">
-        <img style="filter: grayscale(100)" src="assets/img/66.jpg" class="img-fluid" alt=""/>
-      </div>
-      <div class="col-lg-6 content">
-        <div class="container">
-          <h6 class="mt-5" style="color: rgb(161, 161, 161)">K I N THAiLAND</h6>
-          <h1 class="mt-3" style="color: black">
-            A Beginning of Our Relationship
-          </h1>
-          <p class="fst-italic pb-3" style="color: black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos
-            distinctio enim dolorum quae minima iste dignissimos, corporis ut
-            sed porro et. Veritatis eos vel magni corrupti sunt laboriosam rem
-            deleniti laborum nihil, nisi eaque saepe hic officiis consequatur
-            provident doloremque magnam! Dicta porro excepturi aperiam ad
-            inventore! Dolor, voluptas?
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- รูปขวา-->
-    <div class="row me-0" style="background-color: rgb(249, 254, 254)">
-      <div class="col-lg-6 order-lg-2" style="padding-left: 0px; padding-right: 0px">
-        <img style="filter: grayscale(10)" src="assets/img/67.jpg" class="img-fluid" alt=""/>
-      </div>
-      <div class="col-lg-6 order-lg-1 content">
-        <div class="container">
-          <h6 class="mt-5" style="color: rgb(161, 161, 161)">K I N THAiLAND</h6>
-          <h1 class="mt-3" style="color: black">
-            A Beginning of Our Relationship
-          </h1>
-          <p class="fst-italic pb-3" style="color: black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos
-            distinctio enim dolorum quae minima iste dignissimos, corporis ut
-            sed porro et. Veritatis eos vel magni corrupti sunt laboriosam rem
-            deleniti laborum nihil, nisi eaque saepe hic officiis consequatur
-            provident doloremque magnam! Dicta porro excepturi aperiam ad
-            inventore! Dolor, voluptas?
-          </p>
-        </div>
-      </div>
-    </div>
-    <!------------- END SET 2---------------->
-
-    <!-- ======= Hero3 Section ======= -->
-    <section id="hero4" class="d-flex flex-column justify-content-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="1700">
-        <h1>|Featured & Product</h1>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-        <a href="#" class="btn-get-started scrollto mt-3">Get Started</a>
-      </div>
-    </section>
-    <!-- End Hero -->
-    
-    <!-- #ภาพชุด -->
-    <div class="container mt-5">
-      <main id="main" data-aos="fade" data-aos-delay="1000">
-        <h2 style="color: rgb(0, 0, 0)" class="mb-1">|Featured & Product</h2>
-        <!-- ======= Gallery Section ======= -->
-        <section id="gallery" class="gallery">
-          <div class="container-fluid">
-            <h6 style="color: rgb(0, 0, 0)" class="mb-3">
-              <a href="#">View All</a>
-            </h6>
-            <div class="row gy-4 justify-content-center">
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item">
-                  <img src="assets/img/son/1.jpg" class="img-fluid" alt="" />
-                  <div class="gallery-links d-flex align-items-center justify-content-center">
-                    <a href="assets/img/son/1.jpg" title="Gallery 1" class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/son/re/2.jpg" class="img-fluid" alt="" />
-                  <div class="gallery-links d-flex align-items-center justify-content-center">
-                    <a href="assets/img/son/re/2.jpg" title="Gallery 2" class="glightbox preview-link">
-                      <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                      <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/son/re/3.jpg" class="img-fluid" alt="" />
-                  <div class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/son/re/3.jpg"  title="Gallery 3"  class="glightbox preview-link"  >
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/son/re/4.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/son/re/4.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/t/s1.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/t/s1.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/t/s2.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/t/s2.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/t/s3.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/t/s3.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/t/s4.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/t/s4.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/t/s5.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/t/s5.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/t/s6.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/t/s6.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/t/s7.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/t/s7.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
-              <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                  <img src="assets/img/t/2.jpg" class="img-fluid" alt="" />
-                  <div
-                    class="gallery-links d-flex align-items-center justify-content-center">
-                    <a  href="assets/img/t/2.jpg"  title="Gallery 4"  class="glightbox preview-link">
-                       <i class="bi bi-arrows-angle-expand"></i>
-                    </a>
-                    <a href="#" class="details-link">
-                       <i class="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Gallery Item -->
+                <a href="#" style="color: rgb(0, 0, 0);">HOME</a>
+                <a href="#" style="color: rgb(0, 0, 0);">PRODUCT</a>
+                <a href="#" style="color: rgb(0, 0, 0);">PORTFOLIO</a>
+                <a href="#" style="color: rgb(0, 0, 0);">ABOUT US</a>
+                <a href="#" style="color: rgb(0, 0, 0);">CONTACT</a>
             </div>
+          </center>
           </div>
-        </section>
-        <!-- End Gallery Section -->
-      </main>
-    </div>
-    <!-- #END ภาพชุด -->
+            </div>
+          </div>-->
+          <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/kin_w.png" width="80px" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header bg-dark">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color: white;">K I N Thailand</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-dark">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item " >
+                      <a class="nav-link" href="index.html" aria-current="page">HOME</a>
+                    </li>
+                    <li class="nav-item" >
+                      <a class="nav-link" href="product.html">PRODUCT</a>
+                    </li>
+                    <li class="nav-item" >
+                      <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1hHwHLmogycvXcFQIl2RL9q-Xyvriy8ax/view?usp=drive_link">
+                        CATALOG</a>
+                      </li>
+                    <li class="nav-item" >
+                      <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item" >
+                      <a class="nav-link active" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item" >
+                      <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>     
+        
+                    <!-- ดรอปดาวน์
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">HOME</a></li>
+                        <li><a class="dropdown-item" href="#">PRODUCT</a></li>
+                        <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                        <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="#">CONTACT</a></li>     
+                      </ul>
+                    </li> -->
+                  </ul>
+                  <!-- ฟอร์มช่องค้นหา
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                  -->
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <img class="img-fluid" src="images/KIN_1.jpg">
+      <img class="img-fluid" src="images/KIN_2.jpg">
+      <img class="img-fluid" src="images/KIN_3.jpg">
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-6 mt-5">
+							<div class="intro-excerpt mt-5">
+								<h2 style="color: white;">THE KINTSUGI
+                </h2>
+                  <h3 style="color: white;"><span clsas="d-block">COLLECTION 2024</span></h3>
+                  <h4 style="color: white;" clsas="d-block">WHERE NEW STORIES ARE BORN.</h4>
+                
+								<p class="mb-4">Our "Timeless Appeal" Aluminum blends timeless style with modern innovation.
+									Design the future with innovative,
+                  sustainable, and aesthetically
+                  captivating aluminum solutions.
+                  Craft luxurious, inspiring spaces with
+                  unmatched performance. Build your
+                  vision with KIN.
+                </p>
+								<p><a target="_blank" href="https://drive.google.com/file/d/1hHwHLmogycvXcFQIl2RL9q-Xyvriy8ax/view?usp=drive_link" class="btn btn-white-outline">Explore</a></p>
+							</div>
+						</div>
+						<!--
+            <div class="col-lg-6">
+							<div class="hero-img-wrap">
+								<img src="#" class="img-fluid">
+							</div>
+						</div>
+             -->
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
 
-    <!-- ======= Footer ======= -->
-    <hr style="color: black" />
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="copyright" style="color: black">
-          &copy; 2023 <strong><span>KIN THAILAND</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
+		<!-- Start Why Choose Us Section -->
+		<div class="why-choose-section" style="background-color: rgba(215, 215, 215, 0.365);" >
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6">
+						<h2 class="section-title">Why Choose Us</h2>
+						<p style="font-family: prompt;">เรามุ่งมั่นที่จะให้บริการที่มีคุณภาพสูงสุดและเป็นไปตามมาตรฐานที่เราตั้งไว้ เราเชื่อมั่นในความเชื่อถือที่ลูกค้ามอบให้และพยายามทุ่มเทในการรักษามาตรฐานไว้</p>
 
-    <a  href="#"  class="scroll-top d-flex align-items-center justify-content-center">
-      <i class="bi bi-arrow-up-short"></i>
-    </a>
+						<div class="row my-5">
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/truck.svg" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Fast Service</h3>
+									<p style="font-family: prompt;">Providing cost-effective customer service based on the principles of good service helps customers have an expert experience using our products and services.
+                  </p>
+								</div>
+							</div>
 
-    <div id="preloader">
-      <div class="line"></div>
-    </div>
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/bag.svg" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Material Selection</h3>
+									<p style="font-family: prompt;"> Aesthetic Enhancement Options : Dive into the world of optional aesthetic enhancements with our aluminum designs. Whether you're a business looking to make a statement or a homeowner seeking that extra touch of elegance, our versatile options allow you to personalize your space to your taste and needs.
+                  </p>
+								</div>
+							</div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/support.svg" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Space planing</h3>
+									<p style="font-family: prompt;">Commercial Excellence: Elevate your business premises with our cutting-edge aluminum solutions. Ideal for both high and low-rise constructions, our products guarantee to set your building apart, blending durability with design.</p>
+								</div>
+							</div>
 
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/return.svg" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Design consultation</h3>
+									<p style="font-family: prompt;">Bespoke Residential Solutions: Discover our range of custom aluminum applications, from elegant window frames to bespoke kitchen elements, that promise to transform your living spaces into a masterpiece of functional art.</p>
+								</div>
+							</div>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="img-wrap">
+							<img src="images/fc1.jpg" alt="Image" class="img-fluid">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Why Choose Us Section -->
+
+		<!-- Start We Help Section -->
+		<div class="we-help-section">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<div class="imgs-grid">
+							<div class="grid grid-1"><img src="images/f1.jpg" alt="Untree.co"></div>
+							<div class="grid grid-2"><img src="images/f3.jpg" alt="Untree.co"></div>
+							<div class="grid grid-3"><img src="images/t2.jpg" alt="Untree.co"></div>
+						</div>
+					</div>
+					<div class="col-lg-5 ps-lg-5">
+						<h2 class="section-title mb-4">We Help You Make Modern  Design</h2>
+						<p style="font-family: prompt;">
+							เราช่วยคุณสร้างการออกแบบทันสมัยสำหรับวัสดุอลูมิเนียม! ไม่ว่าคุณจะกำลังมองหาการออกแบบที่สวยงามและทันสมัยสำหรับโครงการของคุณหรือไม่ก็คือการพัฒนาผลิตภัณฑ์ใหม่ ทีมของเราพร้อมเสมอที่จะช่วยคุณให้ได้ความสำเร็จ! ติดต่อเราวันนี้เพื่อเริ่มต้นการทำงานของคุณในโลกของการออกแบบทันสมัย!</p>
+
+						<ul style="font-family: prompt;" class="list-unstyled custom-list my-4">
+							<li>เอกลักษณ์เฉพาะตัว</li>
+							<li>การยกระดับด้วยอลูมิเนียม</li>
+							<li>ออกแบบอลูมิเนียมเข้ากับยุกต์สมัย</li>
+							<li>ความสวยงามที่ลงตัว</li>
+						</ul>
+						<p><a herf="#111" class="btn">Explore</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End We Help Section -->
+
+		<!-- Start Popular Product -->
+		<div class="popular-product">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="images/t3.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Terrace</h3>
+								<p style="font-family: prompt;">สัมผัสคุณสมบัติพิเศษของวัสดุอลูมิเนียม ความแข็งแรง ความทนทานต่อสภาพอากาศ และการต้านการกัดกร่อน</p>
+								<p><a href="product.html">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="images/fe1.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Fence</h3>
+								<p style="font-family: prompt;">สัมผัสประสบการณ์รั้วที่ผสมผสานความ
+                  ทนทาน ความสวยงาม และความมีระดับ
+                  อย่างลงตัว</p>
+								<p><a href="product.html">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+						<div class="product-item-sm d-flex">
+							<div class="thumbnail">
+								<img src="images/fc1.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="pt-3">
+								<h3>Facade</h3>
+								<p style="font-family: prompt;">การผสมผสานที่ลงตัวระหว่างการต้อนรับ
+                  อย่างอบอุ่นและความปลอดภัยที่มั่นคง
+                  ด้วยการผลิตอันประณีตและเปี่ยมด้วยศิลปะ
+                  ประตูรั้วของเรา</p>
+								<p><a href="product.html">Read More</a></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Popular Product -->
+		
+		<!-- ======= Footer ======= -->
+  
+		<footer id="footer" class="footer" style="background-color:  black;">
+    
+			<div class="container">
+	   
+				  <div class="row justify-content-between" style="border-bottom: solid 1.5px rgb(255, 255, 255); padding-top: 100px; padding-bottom: 40px;">
+					
+					<div class="col-9">
+					  <div class="col">
+						<h2 data-aos="fade-up" style="color: white;">Discover The Timeless Appeal</h2>
+					  </div>
+					  <div class="col">
+						<p data-aos="fade-up" data-aos-delay="200" style="color: white;">Schedule a Consultation with Our Experts</p>
+					  </div>
+					</div>
+					<div class="col-md-3 text-end" data-aos="fade-up">
+					<button class="btn btn-get-started " style="background-color: aliceblue;"><a href="#">Get In Touch</a> </button>
+					</div>
+				  </div>
+	  
+			  <div class="d-flex" style="padding-top: 35px; padding-bottom: 30px;" data-aos="fade-right">
+				<div class="col-4">
+				  <!-- ลิกก์ logo kin-->
+				<a href="#"><img class="inverse-image mt-4 " src="images/kin_b.png" height="45px"/></a>
+			  </div>
+			  <!-- © kin -->
+			  <div class="text-center col-4 align-self-end" style="color: white;">
+				&copy; 2023<span> KIN</span>
+			  </div>
+			  <!-- social link -->
+			  <div class="social-links text-end col-4 align-self-end " style="font-size: 24px;">
+				<a href="#" class="line"><i class="bx bxl-line" style="color: aliceblue; padding-left: 10px;"></i></a>
+				<a href="https://m.facebook.com/KINThailand2023/" target="_blank" class="facebook"><i class="bx bxl-facebook" style="color: aliceblue; padding-left: 10px;"></i></a>
+				<a href="https://www.instagram.com/kin.thailand?igsh=MTFuOTdzYnppYnp5Yw%3D%3D&utm_source=qr" target="_blank" class="instagram"><i class="bx bxl-instagram" style="color: aliceblue; padding-left: 10px;"></i></a>
+			  </div>
+			  </div>
+			</div>
+	  
+		  </footer>
+		  <!-- End Footer -->
+
+	
+		<!-- Template Main JS File
+	  <script src="assets/js/main.js"></script> -->
+	
+		<!--script ควบคุม Animation -->
+		<script>
+		  // รอให้หน้าเว็บโหลดเสร็จก่อนที่จะเรียกใช้ AOS
+		  document.addEventListener("DOMContentLoaded", function() {
+			// เรียกใช้ AOS
+			AOS.init({
+			  duration: 1250, // ระยะเวลาที่ animation ใช้
+			  once: false, // ให้ทำ animation ทุกรอบเมื่อเลื่อน
+			});
+		  });
+		</script>
+		 <!-- End script ควบคุม Animation -->
+
+		<script src="assets/js/bootstrap_product.bundle.min.js"></script>
+		<script src="assets/js/tiny-slider_product.js"></script>
+		<script src="assets/js/custom_product.js"></script>
+	</body>
+
 </html>

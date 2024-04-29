@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PhotoFolio Bootstrap Template - Contact</title>
+  <title>Contactus</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="shortcut icon" href="images/k1.ico">
+  <link href="images/k1.ico" rel="icon">
+  <link href="images/k1.ico" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
   
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-
+    <link href="assets/css/style_product.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: PhotoFolio
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -38,39 +39,112 @@
   ======================================================== -->
 </head>
 
-<body>
+<body style="background-color: white;">
 
   <!-- ======= Header ======= -->
-    <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header1 ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header>
+    <!--
+    <div class="custom-padding-left">     
+      <div class="row header">
+           <div class="dropdown header">  
+          <nav  id="navbar" class="navbar nav-menu" style="z-index: 999;">
+          <navlogo class="logo-padding" style="position: fixed;" data-aos="fade-right">
+            <span><img style="position: fixed" class="inverse-image mt-4 " src="images/kin_b.png" height="45px"/></span>
+            </navlogo>
+          </nav>
+            <center>
+            <div class="dropdown-content">
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="about.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="services.html" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <li><a href="contact.html" class="nav-link scrollto active"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+              <a href="#" style="color: rgb(0, 0, 0);">HOME</a>
+              <a href="#" style="color: rgb(0, 0, 0);">PRODUCT</a>
+              <a href="#" style="color: rgb(0, 0, 0);">PORTFOLIO</a>
+              <a href="#" style="color: rgb(0, 0, 0);">ABOUT US</a>
+              <a href="#" style="color: rgb(0, 0, 0);">CONTACT</a>
+          </div>
+        </center>
+        </div>
+          </div>
+        </div>-->
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/kin_w.png" width="80px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header bg-dark">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color: white;">K I N Thailand</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-dark">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item " >
+                    <a class="nav-link" href="index.html" aria-current="page">HOME</a>
+                  </li>
+                  <li class="nav-item" >
+                    <a class="nav-link" href="product.html">PRODUCT</a>
+                  </li>
+        <li class="nav-item" >
+          <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1hHwHLmogycvXcFQIl2RL9q-Xyvriy8ax/view?usp=drive_link">
+            CATALOG</a>
+          </li>
+                  <li class="nav-item" >
+                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item" >
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item" >
+                    <a class="nav-link active" href="contact.html">CONTACT</a>
+                  </li>     
+      
+                  <!-- ดรอปดาวน์
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">HOME</a></li>
+                      <li><a class="dropdown-item" href="#">PRODUCT</a></li>
+                      <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                      <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+                      <li><a class="dropdown-item" href="#">CONTACT</a></li>     
+                    </ul>
+                  </li> -->
+                </ul>
+                <!-- ฟอร์มช่องค้นหา
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+                -->
+              </div>
+            </div>
+          </div>
+        </nav>
+  </header>
 
-  </header><!-- End Header -->
+  <!-- Start Hero Section -->
+  <div  style="background-color: #000; height: 180px;">
+    <div class="container">
+        <div class="col-lg-6">
+          <div class="intro-excerpt" style="padding-top: 12vh;">
+            <a href="product.html" class="btn btn-white-outline">Back to Product</a></p>
+          </div>
+        </div>
+    </div>
+  </div>
+<!-- End Hero Section -->
 
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
+  <main id="main" data-aos="fade" data-aos-delay="250">
 
     <!-- ======= End Page Header ======= -->
     <div class="page-header d-flex align-items-center">
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Contact</h2>
-            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-
+            <h2 style="color: black;">Contact</h2>
           </div>
         </div>
       </div>
@@ -78,96 +152,124 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container">
+      <div class="container col-md-6">
 
         <div class="row gy-4 justify-content-center">
 
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <i class="bi bi-geo-alt flex-shrink-0" style="color: white;"></i>
               <div>
-                <h4>Location:</h4>
-                <p>A108 Jesus Street, God of God, G 55022</p>
+                <h4 style="color: black;">Location:</h4>
+                <p style="color: black; font-family: prompt;">บริษัท เอส วรรณ อินสตอลเลชั่น จำกัด
+                  88-88/1 88/2 ซอย สุวินทวงศ์52 แขวงลำผักชี เขตหนองจอก กรุงเทพมหานคร 10510
+
+                </p>
               </div>
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
+              <i class="bi bi-envelope flex-shrink-0" style="color: white;"></i>
               <div>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
+                <h4 style="color: #000;">Email:</h4>
+                <p style="color: #000;">kinthailand@s-one.co.th</p>
               </div>
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="info-item d-flex">
-              <i class="bi bi-phone flex-shrink-0"></i>
+              <i class="bi bi-phone flex-shrink-0" style="color: white;"></i>
               <div>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55</p>
+                <h4 style="color: #000;">Call:</h4>
+                <p style="color: #000;">02-907-4091-5</p>
               </div>
             </div>
           </div><!-- End Info Item -->
 
+          <div class="col-lg-4">
+            <a target="_blank" href="https://lin.ee/lAjgLkK" style="text-decoration:none">
+            <div class="info-item d-flex">
+              <i class="bi bi-line flex-shrink-0" style="color: white;"></i>
+              <div>
+                <h4 style="color: #000;">Line:</h4>
+                <p style="color: #000;">@KinThailand</p>
+              </div>
+            </div>
+          </a>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-4">
+            <a target="_blank" href="https://m.facebook.com/KINThailand2023/" style="text-decoration:none">
+            <div class="info-item d-flex">
+              <i class="bi bi-facebook flex-shrink-0" style="color: white;"></i>
+              <div>
+                <h4 style="color: #000;">Facebook:</h4>
+                <p style="color: #000;">KIN Thailand</p>
+              </div>
+            </div>
+          </a>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-4">
+            <a target="_blank" href="https://www.instagram.com/kin.thailand?igsh=MTFuOTdzYnppYnp5Yw%3D%3D&utm_source=qr" style="text-decoration:none">
+            <div class="info-item d-flex">
+              <i class="bi bi-instagram flex-shrink-0" style="color: white;"></i>
+              <div>
+                <h4 style="color: #000;">instagram:</h4>
+                <p style="color: #000;">kin.thailand</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+          </a>
         </div>
-
-        <div class="row justify-content-center mt-4">
-
-          <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
       </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer mt-5" style="background-color:  black;">
+    
     <div class="container">
-      <div class="copyright">
-        &copy; <strong><span>K I N THAiLAND</span></strong> 2023
+
+          <div class="row justify-content-between" style="border-bottom: solid 1.5px rgb(255, 255, 255); padding-top: 100px; padding-bottom: 40px;">
+            
+            <div class="col-9">
+              <div class="col">
+                <h2 data-aos="fade-up" style="color: white;">Discover The Timeless Appeal</h2>
+              </div>
+              <div class="col">
+                <p data-aos="fade-up" data-aos-delay="200" style="color: white;">Schedule a Consultation with Our Experts</p>
+              </div>
+            </div>
+            <div class="col-md-3 text-end" data-aos="fade-up">
+            <button class="btn btn-get-started " style="background-color: aliceblue;"><a href="product.html">Get In Touch</a> </button>
+            </div>
+          </div>
+
+      <div class="d-flex" style="padding-top: 35px; padding-bottom: 30px;" data-aos="fade-right">
+        <div class="col-4">
+          <!-- ลิกก์ logo kin-->
+        <a href="#"><img class="inverse-image mt-4 " src="images/kin_w.png" height="45px"/></a>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
+      <!-- © kin -->
+      <div class="text-center col-4 align-self-end">
+        &copy; 2023<span> KIN</span>
+      </div>
+      <!-- social link -->
+      <div class="social-links text-end col-4 align-self-end " style="font-size: 24px;">
+        <a target="_blank" href="https://lin.ee/lAjgLkK" class="line"><i class="bi bi-line" style="color: aliceblue; padding-left: 10px;"></i></a>
+        <a href="https://m.facebook.com/KINThailand2023/" target="_blank" class="facebook"><i class="bx bxl-facebook" style="color: aliceblue; padding-left: 10px;"></i></a>
+      <a href="https://www.instagram.com/kin.thailand?igsh=MTFuOTdzYnppYnp5Yw%3D%3D&utm_source=qr" target="_blank" class="instagram"><i class="bx bxl-instagram" style="color: aliceblue; padding-left: 10px;"></i></a>
+      </div>
       </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer>
+  <!-- End Footer -->
 
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
